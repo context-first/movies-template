@@ -262,6 +262,7 @@ Additional rules:
 - Boolean flags accept `true`/`false`, `1`/`0`, `yes`/`no` (case-insensitive).
 - Unknown flags or invalid values cause the process to exit non-zero before the HTTP listener starts.
 - `--help` / `-h` prints all flags, their env-var equivalents, defaults, and current effective values, then exits 0.
+- `--version` / `-v` prints **only** the semver string of the running build (e.g. `0.1.0`) to stdout with no surrounding whitespace, JSON, prefix, or trailing newline, then exits 0. The output must match the body served by `GET /version` (§6.1) byte-for-byte. The flag is processed before configuration loading, validation, or the HTTP listener starts.
 - The effective configuration (with secret values redacted) is logged once at `info` level on startup.
 
 ## 12. Inner-Loop Dev Process
