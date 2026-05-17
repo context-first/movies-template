@@ -23,7 +23,9 @@ If you skip step 1 or 2, you'll do the experiment wrong and your data won't coun
 
 A `1.0.0` tag on your fork where every checkbox in [spec.md §14](docs/spec.md#14-acceptance-criteria) is green on a freshly-wiped local k3s cluster.
 
-Expect this to take **6–10 sessions of 90–120 minutes each**, ~12–20 hours of focused time over 2–4 weeks. If your first session goes 5 hours, you skipped the fit check. Re-read [METHODOLOGY.md](docs/METHODOLOGY.md).
+Expect this to take **multiple sessions of 90–120 minutes each**. If your first session goes 5 hours, you skipped the fit check. Re-read [METHODOLOGY.md](docs/METHODOLOGY.md).
+
+> Tip: Using a prompt like this is a good start - `following experiment.md, methodology.md, spec.md, and readme.md, break the experiment into logical, 90-120 minute sessions per the methodology`
 
 ---
 
@@ -42,9 +44,9 @@ Clone your new repo locally.
 You will need, at minimum:
 - `git`, `gh` (GitHub CLI), `make` (or your platform's equivalent)
 - Docker or Podman
-- A local Kubernetes — `k3s` preferred - `k3d`, `kind`, or `minikube` will work
+- A local Kubernetes — `k3s` preferred
 - `kubectl`, `kustomize`
-- An AI assistant of your choice (Copilot, Claude, ChatGPT, etc.)
+- An AI assistant of your choice (Claude Code, Copilot etc.)
 
 Do not install language toolchains yet. Picking the language is part of Session 1.
 
