@@ -1,4 +1,4 @@
-# Movies — Sessions + RPI Experiment
+# Movies Experiment
 
 A small Kubernetes-native HTTP API. The interesting thing isn't the API — it's *how you build it*.
 
@@ -42,9 +42,9 @@ Clone your new repo locally.
 You will need, at minimum:
 - `git`, `gh` (GitHub CLI), `make` (or your platform's equivalent)
 - Docker or Podman
-- A local Kubernetes — `k3d`, `kind`, or `minikube` are all fine
+- A local Kubernetes — `k3s` preferred - `k3d`, `kind`, or `minikube` will work
 - `kubectl`, `kustomize`
-- An AI assistant of your choice (Copilot, Claude, Cursor, Aider, plain ChatGPT — RPI is a workflow, not a tool)
+- An AI assistant of your choice (Copilot, Claude, ChatGPT, etc.)
 
 Do not install language toolchains yet. Picking the language is part of Session 1.
 
@@ -59,7 +59,7 @@ Open [session-log.md](session-log.md). Fill in the **Frame** for Session 1:
 - **Out of scope:** what are you explicitly not doing?
 - **Failure condition:** what would make this session a failure?
 
-Suggested Session 1 goal: **"Choose stack + ship `/version` and `/healthz` end-to-end on local k3s, tagged `0.1.0`."** That is a real session — research the stack, plan the smallest end-to-end slice, fit-check it, implement, review, tag. Do not start broader.
+Suggested Session 1 goal: **"Choose stack + ship `/version` and `/healthz` end-to-end on local k3s, tagged `0.1.0`."** That is a real session — research the stack, plan the smallest end-to-end slice, fit-check it, implement, review, tag.
 
 You may pick a different Session 1 — but write it in the log first and defend the frame.
 

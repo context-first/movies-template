@@ -6,16 +6,16 @@
 
 The hypothesis:
 
-> A small Kubernetes-native service (the **movies bar**: API · structured logs · Prometheus metrics · Grafana dashboard · load-test client) can be shipped by **one engineer in a small number of focused sessions** when the engineer uses [sessions](METHODOLOGY.md) + [RPI](METHODOLOGY.md) together.
+> A small Kubernetes-native service (the **movies MVP**: API · structured logs · Prometheus metrics · Grafana dashboard · load-test client) can be shipped by **one engineer in a small number of focused sessions** when the engineer uses [sessions](METHODOLOGY.md) + [RPI](METHODOLOGY.md) together.
 
-A comparable bar has been shipped before in two very different ways: a 4-person team over many months, and a single senior engineer in a few days using a year of pre-built tooling. Both results were confounded — by team size in the first case, by senior experience plus reusable tooling in the second.
+A comparable MVP has been shipped before by a team that did not use AI.
 
 **This experiment strips both confounds:**
 - **Greenfield.** The repo template gives you a spec and data files. No reusable tooling.
 - **Stack agnostic.** The spec ([spec.md](spec.md) §1) deliberately does not specify a language. You pick.
 - **Wide engineer pool.** Multiple participants run independently. We compare.
 
-If most participants ship the movies bar in roughly the budget the methodology predicts, the multiplier is methodology-driven, not seniority-driven. If they don't, the methodology needs to change — or be honest about who it works for.
+If most participants ship the movies MVP in roughly the budget the methodology predicts, the multiplier is methodology-driven, not seniority-driven. If they don't, the methodology needs to change — or be honest about who it works for.
 
 ## What "Done" Means
 
@@ -35,7 +35,7 @@ You track these by simply **using the repo as designed.** No extra reporting too
 
 | Signal | Where it lives | Why we care |
 |---|---|---|
-| **Session count** | git tags (`0.1.0`, `0.2.0`, …, `1.0.0`) | The headline number. How many sessions to ship the bar? |
+| **Session count** | git tags (`0.1.0`, `0.2.0`, …, `1.0.0`) | The headline number. How many sessions to ship the MVP? |
 | **Session duration** | timestamps in [`session-log.md`](../session-log.md) — **Start written at frame, End written at close ritual** (no post-hoc estimates), cross-checked against git in the close ritual itself | Did sessions stay in the 90–120 minute bound? |
 | **Fit-check decisions** | recorded in each session block of [`session-log.md`](session-log.md) | Were plans realistic? Where did frames over-promise? |
 | **Drift incidents** | "drift moments" field per session in [`session-log.md`](session-log.md) | Was scope held? |
@@ -43,7 +43,7 @@ You track these by simply **using the repo as designed.** No extra reporting too
 | **Per-session retro bullets** | [`RETRO.md`](../RETRO.md) — one bullet appended per session in the close ritual, opened at Session 1 | Captures lessons while they are fresh, not reconstructed at release time. |
 | **Stack chosen** | first session's research artifact | For cross-run comparison. |
 | **Time-to-1.0.0** | git: tag date of `1.0.0` minus first commit | The summary metric. |
-| **§14 checklist** | checked in your final session log paragraph | Does the bar actually pass? |
+| **§14 checklist** | checked in your final session log paragraph | Does the MVP actually pass? |
 
 You do not need to add anything to track these. **Run the methodology as written and the evidence accumulates as a side effect.**
 
@@ -78,8 +78,8 @@ These exist so the runs are comparable evidence, not folklore.
 Naming these explicitly so we don't accidentally measure the wrong thing.
 
 - **Not raw AI assistant quality.** You can use any AI: Copilot, Claude Code, Cursor, Cody, plain Claude.ai chat, ChatGPT. Note which one in your retro.
-- **Not which language is fastest.** The spec is stack-agnostic on purpose. We expect Go, Rust, Python, TypeScript, .NET runs all to land at the bar.
-- **Not your individual speed.** The unit is *sessions to ship the bar*, not *minutes to ship the bar*. A run that took 8 sessions over 2 weeks calendar-time is the same evidence as one that took 8 sessions over 2 days.
+- **Not which language is fastest.** The spec is stack-agnostic on purpose. We expect Go, Rust, Python, TypeScript, .NET runs all to land at the MVP.
+- **Not your individual speed.** The unit is *sessions to ship the MVP*, not *minutes to ship the MVP*. A run that took 8 sessions over 2 weeks calendar-time is the same evidence as one that took 8 sessions over 2 days.
 
 ## What to Do If You Get Stuck
 
