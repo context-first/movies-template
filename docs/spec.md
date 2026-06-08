@@ -194,7 +194,7 @@ Exposed at `/metrics` in Prometheus text exposition format. Implementers should 
 
 ## 8. Kubernetes Manifests
 
-Every deployable component (movies-api, Prometheus, Grafana, and any future addition) is delivered exclusively as Kubernetes manifests managed by **Kustomize** (`base/` + `overlays/`). Helm charts are out of scope and must not be added.
+Every deployable component (movies-api, Prometheus, Grafana, and any future addition) is delivered exclusively as Kubernetes manifests managed by **Kustomize** (`base/` + `overlays/`). Helm charts are out of scope and must not be used.
 
 ### 8.1 movies-api Deployment requirements
 
